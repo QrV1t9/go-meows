@@ -11,8 +11,8 @@ import (
 
 func main() {
 	app := &cli.App{
-		Name:  "Say meow",
-		Usage: "Just say meow",
+		Name:  "meow",
+		Usage: "meow <count>",
 		Action: func(ctx *cli.Context) error {
 			meows := [...]string{"meow", "murr", "maow", "meoww", "nyaaa", "nya"}
 			if ctx.NArg() == 0 {
